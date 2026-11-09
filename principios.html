@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce las reglas de Shneiderman y las heurísticas de Nielsen.">
+    <title>Principios | Guía UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">Guía UX/UI<span class="brand-subtitle">Diseño de Experiencia de Usuario e Interfaces (UX/UI)</span></a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ux-ui.html">UX vs. UI</a></li>
+                    <li><a href="principios.html" class="activo" aria-current="page">Principios</a></li>
+                    <li><a href="proceso.html">Proceso</a></li>
+                    <li><a href="herramientas.html">Herramientas</a></li>
+                    <li><a href="practicas.html">Buenas prácticas</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="creador.html">Creador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="container" tabindex="-1">
+        <nav class="crumbs" aria-label="Ruta de navegación"><a href="index.html">Inicio</a> / <span>Principios</span></nav>
+        <section class="page-intro" aria-labelledby="principios-title">
+            <h1 id="principios-title">Reglas que ayudan a diseñar mejor.</h1>
+            <p class="lead">Las 8 reglas de oro de Shneiderman y las 10 heurísticas de Nielsen, con un ejemplo cada una.</p>
+        </section>
+          <figure class="page-image">
+            <img src="img/principios.jpg" alt="Pequeño cuaderno usado como herramienta para realizar pequeños bocetos. " width="1200" height="514">
+        </figure>
+         <section class="section" aria-labelledby="shneiderman-title">
+            <div class="section-heading">
+                <h2 id="shneiderman-title">Las 8 reglas de oro de Shneiderman</h2>
+                <p>Ben Shneiderman las propuso para diseñar interfaces que se sientan claras y seguras de usar.</p>
+            </div>
+            <ol class="reglas">
+                <li>
+                    <div>
+                        <h3>Buscar la consistencia</h3>
+                        <p>Acciones parecidas deben verse y funcionar de forma parecida en todo el sistema.</p>
+                        <p><strong>Ejemplo:</strong> este sitio usa el mismo menú y footer en todas las páginas.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Facilitar el uso universal</h3>
+                        <p>El diseño debe servir a personas con distintas edades, habilidades y niveles de experiencia.</p>
+                        <p><strong>Ejemplo:</strong> texto con buen contraste y un enlace para saltar al contenido.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Dar retroalimentación informativa</h3>
+                        <p>Cada acción de la persona debe tener una respuesta visible del sistema.</p>
+                        <p><strong>Ejemplo:</strong> un botón que cambia de color al pasar el cursor.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Diseñar diálogos con un final claro</h3>
+                        <p>Las secuencias de pasos deben tener inicio, desarrollo y cierre, para que la persona sepa que terminó.</p>
+                        <p><strong>Ejemplo:</strong> una pantalla de «Compra realizada» al terminar un pago.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Prevenir errores</h3>
+                        <p>El sistema debe evitar que la persona se equivoque y ayudarla a corregir si ocurre.</p>
+                        <p><strong>Ejemplo:</strong> un campo de correo que avisa si falta el símbolo @.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Permitir deshacer fácilmente</h3>
+                        <p>Poder revertir una acción da tranquilidad para explorar sin miedo.</p>
+                        <p><strong>Ejemplo:</strong> la opción «Deshacer» tras borrar un mensaje.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Dar el control a la persona</h3>
+                        <p>Quien usa el sistema debe sentir que lo dirige, no que el sistema decide por él.</p>
+                        <p><strong>Ejemplo:</strong> poder pausar un video o cerrar una ventana emergente.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Reducir la carga de memoria</h3>
+                        <p>Es mejor mostrar las opciones a la vista que obligar a recordarlas.</p>
+                        <p><strong>Ejemplo:</strong> un menú siempre visible con la página actual marcada.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section" aria-labelledby="nielsen-title">
+            <div class="section-heading">
+                <h2 id="nielsen-title">Las 10 heurísticas de Nielsen</h2>
+                <p>
+                    Jakob Nielsen las formuló para evaluar qué tan usable es una interfaz. Haz clic en cada una para ver el detalle.
+                </p>
+            </div>
+            <div class="acordeon">
+                <details open>
+                    <summary>1. Visibilidad del estado del sistema</summary>
+                    <div class="detalle">
+                        <p>La persona siempre debe saber qué está pasando.</p>
+                        <p><strong>Ejemplo:</strong> una barra de progreso al subir un archivo.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>2. Coincidencia con el mundo real</summary>
+                    <div class="detalle">
+                        <p>El sistema debe hablar el lenguaje de quien lo usa, sin tecnicismos innecesarios.</p>
+                        <p><strong>Ejemplo:</strong> un ícono de carrito para las compras.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>3. Control y libertad del usuario</summary>
+                    <div class="detalle">
+                        <p>Debe haber una salida clara cuando la persona se equivoca o cambia de opinión.</p>
+                        <p><strong>Ejemplo:</strong> las migas de pan para volver a la página anterior.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>4. Consistencia y estándares</summary>
+                    <div class="detalle">
+                        <p>Lo que se parece debe comportarse igual, y se deben seguir las convenciones conocidas.</p>
+                        <p><strong>Ejemplo:</strong> el logo siempre lleva a la página de inicio.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>5. Prevención de errores</summary>
+                    <div class="detalle">
+                        <p>Es mejor evitar el problema que mostrar un mensaje de error.</p>
+                        <p><strong>Ejemplo:</strong> pedir confirmación antes de eliminar algo importante.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>6. Reconocer en lugar de recordar</summary>
+                    <div class="detalle">
+                        <p>Las opciones y la información deben estar visibles, para no cargar la memoria.</p>
+                        <p><strong>Ejemplo:</strong> un buscador que sugiere búsquedas recientes.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>7. Flexibilidad y eficiencia de uso</summary>
+                    <div class="detalle">
+                        <p>El sistema debe servir tanto a principiantes como a personas expertas.</p>
+                        <p><strong>Ejemplo:</strong> atajos de teclado como <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>8. Diseño estético y minimalista</summary>
+                    <div class="detalle">
+                        <p>Cada elemento extra compite con lo importante, así que conviene mostrar solo lo necesario.</p>
+                        <p><strong>Ejemplo:</strong> una página con pocos colores y mucho espacio libre.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>9. Ayudar a reconocer y corregir errores</summary>
+                    <div class="detalle">
+                        <p>Los mensajes de error deben explicar qué pasó y cómo solucionarlo, en lenguaje simple.</p>
+                        <p><strong>Ejemplo:</strong> «La contraseña debe tener al menos 8 caracteres».</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>10. Ayuda y documentación</summary>
+                    <div class="detalle">
+                        <p>Si hace falta ayuda, debe ser fácil de encontrar y de seguir.</p>
+                        <p><strong>Ejemplo:</strong> una sección de preguntas frecuentes.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+        
+        <section class="section" aria-labelledby="ejemplo-title">
+            <div class="section-heading">
+                <h2 id="ejemplo-title">Cómo aplica este sitio estas reglas</h2>
+            </div>
+            <div class="card-list">
+                <article class="card">
+                    <h3>Orientación y control</h3>
+                    <p>El menú marca la página actual, las migas de pan permiten volver y el enlace del footer lleva de nuevo al inicio del contenido.</p>
+                </article>
+                <article class="card">
+                    <h3>Consistencia y minimalismo</h3>
+                    <p>Todas las páginas comparten el mismo header, menú, footer y estilos, con pocos colores y tipografías.</p>
+                </article>
+                <article class="card">
+                    <h3>Accesibilidad</h3>
+                    <p>Hay contraste alto, foco visible al navegar con teclado, textos alternativos en las imágenes y diseño adaptable a celular.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-layout"><p>Guía UX/UI · Parcial 2</p><p>Hecho por: Diego Chuez</p><a href="#contenido">Volver al contenido ↑</a></div>
+    </footer>
+</body>
+</html>
