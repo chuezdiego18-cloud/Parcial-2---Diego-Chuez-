@@ -775,3 +775,10 @@ main > :last-child {
         scroll-behavior: auto !important;
     }
 }
+main p,
+main dd,
+.indice-desc {
+    max-width: none;
+    text-align: justify;
+    hyphens: auto;
+}
