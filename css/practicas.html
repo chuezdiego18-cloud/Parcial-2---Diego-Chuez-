@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buenas y malas prácticas de diseño de interfaces.">
+    <title>Buenas prácticas | Guía UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">Guía UX/UI<span class="brand-subtitle">Diseño de Experiencia de Usuario e Interfaces (UX/UI)</span></a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ux-ui.html">UX vs. UI</a></li>
+                    <li><a href="principios.html">Principios</a></li>
+                    <li><a href="proceso.html">Proceso</a></li>
+                    <li><a href="herramientas.html">Herramientas</a></li>
+                    <li><a href="practicas.html" class="activo" aria-current="page">Buenas prácticas</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="creador.html">Creador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="container" tabindex="-1">
+        <nav class="crumbs" aria-label="Ruta de navegación"><a href="index.html">Inicio</a> / <span>Buenas prácticas</span></nav>
+        <section class="page-intro" aria-labelledby="practicas-title">
+            <h1 id="practicas-title">Aprende comparando.</h1>
+            <p class="lead">Ejemplos de diseños mejorables junto a su versión corregida.</p>
+        </section>
+          <figure class="page-image">
+            <img src="img/practicas.jpg" alt="Un pequeño área de trabajo. " width="1200" height="514">
+        </figure>
+          <section class="section" aria-labelledby="comparar-title">
+            <div class="section-heading">
+                <h2 id="comparar-title">Compara y aprende</h2>
+                <p>Tres situaciones comunes, con la versión que conviene evitar y su versión mejorada.</p>
+            </div>
+
+            <h3 class="comparacion-titulo">1. Mensajes de error</h3>
+            <div class="comparacion">
+                <article class="ejemplo">
+                    <p class="etiqueta etiqueta-mal">✕ Evitar</p>
+                    <p class="demo">Error 0x80070057</p>
+                    <p>No dice qué pasó ni cómo resolverlo.</p>
+                </article>
+                <article class="ejemplo">
+                    <p class="etiqueta etiqueta-bien">✓ Mejor</p>
+                    <p class="demo">La contraseña debe tener al menos 8 caracteres. Escríbela de nuevo.</p>
+                    <p>Explica el problema en lenguaje simple y propone la solución.</p>
+                </article>
+            </div>
+            <p class="comparacion-nota">Relacionado con la heurística 9 de Nielsen: ayudar a reconocer y corregir errores.</p>
+
+            <h3 class="comparacion-titulo">2. Texto de los botones</h3>
+            <div class="comparacion">
+                <article class="ejemplo">
+                    <p class="etiqueta etiqueta-mal">✕ Evitar</p>
+                    <p class="demo"><span class="demo-boton">Click aquí</span></p>
+                    <p>La persona no sabe qué ocurrirá al hacer clic.</p>
+                </article>
+                <article class="ejemplo">
+                    <p class="etiqueta etiqueta-bien">✓ Mejor</p>
+                    <p class="demo"><span class="demo-boton">Descargar la guía</span></p>
+                    <p>Anuncia con claridad la acción y su resultado.</p>
+                </article>
+            </div>
+            <p class="comparacion-nota">Relacionado con la heurística 2 de Nielsen: coincidencia con el mundo real.</p>
+
+            <h3 class="comparacion-titulo">3. Contraste del texto</h3>
+            <div class="comparacion">
+                <article class="ejemplo">
+                    <p class="etiqueta etiqueta-mal">✕ Evitar</p>
+                    <p class="demo demo-contraste-mal">Este texto casi no se distingue del fondo.</p>
+                    <p>Cuesta leerlo, sobre todo con poca luz o con baja visión.</p>
+                </article>
+                <article class="ejemplo">
+                    <p class="etiqueta etiqueta-bien">✓ Mejor</p>
+                    <p class="demo demo-contraste-bien">Este texto se lee con facilidad.</p>
+                    <p>Un buen contraste ayuda a todas las personas, no solo a quienes tienen dificultades visuales.</p>
+                </article>
+            </div>
+            <p class="comparacion-nota">Relacionado con la regla de Shneiderman de facilitar el uso universal.</p>
+        </section>
+
+        <section class="section" aria-labelledby="repaso-title">
+            <div class="section-heading">
+                <h2 id="repaso-title">Pon a prueba lo aprendido</h2>
+                <p>Piensa tu respuesta y luego haz clic en la pregunta para ver la solución.</p>
+            </div>
+            <div class="repaso">
+                <details>
+                    <summary>¿Qué principio no se cumple si un botón no cambia al pasar el cursor?</summary>
+                    <p>La retroalimentación informativa de Shneiderman, que coincide con la visibilidad del estado del sistema de Nielsen: la persona no recibe señal de que su acción fue detectada.</p>
+                </details>
+                <details>
+                    <summary>Un sitio muestra «Error 500» sin más explicación. ¿Qué heurística de Nielsen se incumple?</summary>
+                    <p>La número 9: ayudar a reconocer, diagnosticar y corregir errores. El mensaje debe usar lenguaje claro e indicar cómo solucionarlo.</p>
+                </details>
+                <details>
+                    <summary>Cada página de un sitio tiene un menú diferente. ¿Qué regla se rompe?</summary>
+                    <p>La consistencia, tanto en las reglas de Shneiderman como en la heurística 4 de Nielsen (consistencia y estándares).</p>
+                </details>
+                <details>
+                    <summary>¿Qué heurística se aplica cuando se puede cerrar una ventana emergente o deshacer una acción?</summary>
+                    <p>La heurística 3 de Nielsen: control y libertad del usuario.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-layout"><p>Guía UX/UI · Parcial 2</p><p>Hecho por: Diego Chuez</p><a href="#contenido">Volver al contenido ↑</a></div>
+    </footer>
+</body>
+</html>

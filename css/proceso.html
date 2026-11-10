@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Etapas del proceso de diseño UX/UI.">
+    <title>Proceso | Guía UX/UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">Guía UX/UI<span class="brand-subtitle">Diseño de Experiencia de Usuario e Interfaces (UX/UI)</span></a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ux-ui.html">UX vs. UI</a></li>
+                    <li><a href="principios.html">Principios</a></li>
+                    <li><a href="proceso.html" class="activo" aria-current="page">Proceso</a></li>
+                    <li><a href="herramientas.html">Herramientas</a></li>
+                    <li><a href="practicas.html">Buenas prácticas</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="creador.html">Creador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="container" tabindex="-1">
+        <nav class="crumbs" aria-label="Ruta de navegación"><a href="index.html">Inicio</a> / <span>Proceso</span></nav>
+        <section class="page-intro" aria-labelledby="proceso-title">
+            <h1 id="proceso-title">Diseñar con evidencia, paso a paso.</h1>
+            <p class="lead">De la investigación a la prueba con usuarios: las etapas de un diseño bien hecho.</p>
+        </section>
+        <figure class="page-image">
+            <img src="img/proceso.jpg" alt="Distintas personas están realizando una lluvia de ideas. " width="1200" height="514">
+        </figure>
+          <section class="section" aria-labelledby="etapas-title">
+            <div class="section-heading">
+                <h2 id="etapas-title">Las cuatro etapas</h2>
+                <p>Cada etapa produce algo concreto que sirve de punto de partida para la siguiente.</p>
+            </div>
+            <ol class="linea-tiempo">
+                <li>
+                    <h3>Investigar</h3>
+                    <p>Antes de dibujar nada, se habla con personas reales para entender qué necesitan y qué les estorba. Se puede hacer con entrevistas, encuestas u observación.</p>
+                    <p class="resultado"><strong>Resultado:</strong> una lista de necesidades y problemas.</p>
+                </li>
+                <li>
+                    <h3>Definir</h3>
+                    <p>Con lo investigado se decide qué problema se va a resolver y para quién. Aquí nacen las personas de usuario: perfiles que representan a los usuarios reales.</p>
+                    <p class="resultado"><strong>Resultado:</strong> un problema claro y un perfil de usuario.</p>
+                </li>
+                <li>
+                    <h3>Prototipar</h3>
+                    <p>Se dibujan wireframes, que son bocetos simples de la estructura, y luego un prototipo que se pueda recorrer. Equivocarse aquí sale barato.</p>
+                    <p class="resultado"><strong>Resultado:</strong> una versión de prueba fácil de modificar.</p>
+                </li>
+                <li>
+                    <h3>Probar</h3>
+                    <p>Se observa a personas reales usando el prototipo, sin ayudarles, y se anota dónde se confunden o se traban.</p>
+                    <p class="resultado"><strong>Resultado:</strong> una lista de mejoras por hacer.</p>
+                </li>
+            </ol>
+            <p class="linea-tiempo-nota">El proceso no es una línea recta: lo que se aprende al probar vuelve a la etapa de prototipar, y el ciclo se repite hasta que el diseño funciona.</p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-layout"><p>Guía UX/UI · Parcial 2</p><p>Hecho por: Diego Chuez</p><a href="#contenido">Volver al contenido ↑</a></div>
+    </footer>
+</body>
+</html>
